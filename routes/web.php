@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BukuController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,3 +36,5 @@ Route::get('/blog', function () {
         "title" => "Post"
     ]);
 });
+
+Route::get('/buku', [BukuController::class, 'index']);
